@@ -88,7 +88,7 @@ section {
     align-items: center;
     padding: 0 9%;
     justify-content: space-between;
-    background: url('../img/image.png') no-repeat;
+    background: url(../img/image.png) no-repeat;
     background-size: contain;
     background-position: center;
 }
