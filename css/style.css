@@ -84,13 +84,11 @@ section {
 }
 
 .home {
+    display: inline-block;
     display: flex;
     align-items: center;
     padding: 0 9%;
     justify-content: space-between;
-    background: url(../img/image.png) no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 
@@ -103,6 +101,14 @@ section {
     background: transparent;
     border: none;
     transition: 3s;
+}
+
+.hero__imges {
+    /* position: absolute; */
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
 }
 
 .home-imgHover:hover {
@@ -553,19 +559,19 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-contect .progress:nth-child(3) .bar span {
-    width: 65%;
-}
-
-.skills-column:nth-child(1) .skills-contect .progress:nth-child(4) .bar span {
     width: 75%;
 }
 
+.skills-column:nth-child(1) .skills-contect .progress:nth-child(4) .bar span {
+    width: 50%;
+}
+
 .skills-column:nth-child(2) .skills-contect .progress:nth-child(1) .bar span {
-    width: 95%;
+    width: 90%;
 }
 
 .skills-column:nth-child(2) .skills-contect .progress:nth-child(2) .bar span {
-    width: 67%;
+    width: 85%;
 }
 
 .skills-column:nth-child(2) .skills-contect .progress:nth-child(3) .bar span {
@@ -716,7 +722,7 @@ span {
 
 /* ANIMATION RELOAD AND SCROLL */
 .animate {
-    position: absolute;
+    position: absolute; 
     top: 0;
     right: 0;
     width: 100%;
@@ -724,6 +730,7 @@ span {
     background: var(--bg-color);
     z-index: 98;
 }
+
 
 .animate.home-img {
     width: 50%;
